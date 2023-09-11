@@ -1,0 +1,3 @@
+[submodule "subs/lakewood.ai"]
+	path = subs/lakewood.ai
+	url = https://github.com/Lakewood-High-School/lakewood.ai.git
