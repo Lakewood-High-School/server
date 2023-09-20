@@ -1,0 +1,22 @@
+services:
+  api:
+    image: lakewood_ai_api
+    ports:
+      - "8000:8000"
+    networks:
+      - ai_db_connection
+  db:
+    image: mongo
+    volumes:
+      - mongodb_database:/data/db
+    networks:
+      - ai_db_connection
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: cortez
+      MONGO_INITDB_ROOT_PASSWORD: "@l8ertc@mus"
+
+networks:
+  ai_db_connection:
+
+volumes:
+  mongodb_database:

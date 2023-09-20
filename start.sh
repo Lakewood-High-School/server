@@ -10,7 +10,7 @@ else
     echo "An error has been encountered while starting Apache2"
 fi
 echo Starting docker compose
-docker compose up
+docker compose up -d
 docker_compose_status=$?
 if [ "$docker_compose_status" -eq 0 ]; then
     echo "Started docker compose"
