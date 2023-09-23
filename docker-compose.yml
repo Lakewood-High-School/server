@@ -1,6 +1,6 @@
 services:
   api:
-    image: lakewood_ai_api
+    image: et17/lakewood.ai_api:0.0.2
     ports:
       - "8000:8000"
     networks:
